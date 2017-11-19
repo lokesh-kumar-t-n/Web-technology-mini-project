@@ -1,0 +1,15 @@
+CBSE123,RV college of Engineering,Computer Science
+CBSE123,Pes University,Computer Science
+CBSE234,MS Ramaiah Institute of Technology,Mechanical Engineering
+CBSE234,Pes University,Computer Science
+
+ICSE123,Siddaganga Institute of Technology,Computer Science
+ICSE123,Siddaganga Institute of Technology,Computer Science
+
+STATE32,Pes University,Computer Science
+CBSE420,MS Ramaiah Institute of Technology,Mechanical Engineering
+CBSE420,MS Ramaiah Institute of Technology,Computer Science
+CBSE420,MS Ramaiah Institute of Technology,Civil Engineering
+CBSE420,MS Ramaiah Institute of Technology,Mechanical Engineering
+CBSE420,MS Ramaiah Institute of Technology,Computer Science
+CBSE420,MS Ramaiah Institute of Technology,Civil Engineering

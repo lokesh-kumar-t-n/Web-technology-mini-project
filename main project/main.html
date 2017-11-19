@@ -1,0 +1,117 @@
+<html>
+<head>
+  <title> Main page </title>
+</head>
+<link type="text/css" rel="stylesheet" href="main.css">
+<body>
+  <div class="index">
+   <fieldset>
+     <a href="#intro" onclick="obj.change()"> Introduction </a> <br>
+     <a href="#abt_cet" onclick="obj.change()"> About CET </a> <br>
+     <a href="#res" onclick="obj.change()"> Reservation </a><br>
+     <a href="#apply" onclick="obj.change()"> How to apply </a><br>
+     <a href="#eligibility" onclick="obj.change()"> Eligibility </a><br>
+     <a href="#criteria" onclick="obj.change()"> Criteria of seat allotment</a> <br>
+  </fieldset>
+  </div>
+ <div class="heading">
+   <img src="KCET.jpg" float="left" width="300px" height="150px" style="display:inline">
+   <h1 style="display:inline"> Karnataka Common Entrance Test </h1>
+   <img src="ele.jpg" float="right" width="300px" height="150px" style="display:inline">
+  </div>
+  <div class="Register">
+    <fieldset>
+      <form action="main.php" method="POST">
+        <p> User name:<input type="text" placeholder="Roll Number in Your Board" name="roll_no" > </p><br>
+        <p> Board selected:
+        <select name="board">
+          <option name="brd" checked="true"> CBSE </option>
+          <option name="brd"> STATE </option>
+          <option name="brd"> ICSE </option>
+        </select>
+      </p>
+          <br>
+        <p> password:<input type="password" name="password"> </p> <br>
+        <input type="submit" value="Submit"> <br>
+        <a href="register1.php" target="blank"> New User? Create an account </a>
+      </form>
+    </fieldset>
+  </div>
+  <div class="content" background="C:\Users\LAP\Desktop\lokesh\web technology-1\flowers.jpg">
+    <div id="intro">
+    <h1> Introduction </h1>
+    <p><blockquote><em>Hello everyone,</em></h3><br><b><abbr title="karnataka common enterance test">KCET</abbr></b>
+		(populerly known as K-CET) is one of the most trusted examinations
+		conducted to get into a under graduation
+		course,here we try to give an insight of what we are upto.
+		</blockquote></p>
+    </div>
+    <div id="abt_cet">
+    <h1> About CET </h1>
+    <p><blockquote>As mentioned Earlier, K-CET is a good platform to get
+		into UG(under graduation courses) in colleges across the state,here
+		we have  retricted ourselves to <b style="color:coffee">B-Tech</b> as
+		this is just a demo.
+		</blockquote></p>
+    </div>
+    <div id="res">
+    <h1> Reservation </h1>
+    <p><blockquote>
+		As of now, there are no Special privilages given to any category
+		or a religion ,But that could be an updated version of the current
+		version.
+		</blockquote></p>
+    </div>
+    <div id="apply">
+    <h1> How to Apply </h1>
+    <p>
+		<blockquote>
+			Applying for K-CET is not so difficult ,
+			If you have not yet created your account ,Then create  a
+			new account by "clicking on the link on the right corner",
+			And give the neccesary deatails and you are
+			all set.
+		</blockquote>
+		</p>
+    </div>
+    <div id="eligibility">
+    <h1 > Eligibility </h1>
+    <p>
+		<blockquote>
+		Those who have completed second year PUC or
+		any other eqivalent exams with the authorized board in the post two
+		years are the eligible to apply.However,
+		here we shall restricted ourselves to KARNATAKA STATE(PUC),
+		CBSE and ICSE boards.
+		</blockquote>
+		</p>
+    </div>
+    <div id="criteria">
+    <h1> Criteria </h1>
+    <p>
+		<blockquote>
+			The criteria for seat allotment is solely based on the workes obtained in the
+			K-CET exam. As mentioned earlier ,Here we are not providing any kind of special previlages
+			to any persons.so,do well in your test and " ALL THE BEST! "
+		</blockquote>
+		</p>
+    </div>
+  </div>
+  <script>
+        var obj = {};
+            obj.change = function()
+                        {
+
+                            var el = document.querySelectorAll("div");
+                            for(i=0;i<el.length;i++){
+                              if(el[i].getAttribute("class")=="content"){
+                                req=el[i].querySelectorAll("div");
+                              }
+                            }
+                            for(i=0;i<req.length;i++) {
+                              req[i].style.paddingTop="150px";
+                            }
+                        }
+  </script>
+</body>
+</html>

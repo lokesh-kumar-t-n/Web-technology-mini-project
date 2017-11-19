@@ -1,0 +1,528 @@
+<html>
+  <head> <title> CET examination </title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <body>
+    <div class="index">
+      <fieldset>
+      <a href="#Math"> Mathematics section </a> <br>
+      <a href="#Phy"> Physics section </a> <br>
+      <a href="#Chem"> Chemistry section </a><br>
+    </fieldset>
+    </div>
+    <div class="Register">
+      <p style="display:inline" id="min">59</p>
+      <p style="display:inline">:</p>
+      <p style="display:inline" id="sec">59</p>
+      <form action="end_test.php" onsubmit="return final()">
+      <input type="submit" value="End Test" onclick="TEST.marks()">
+      </form>
+    </div>
+    <div class="heading">
+       <img src="KCET.jpg" float="left" width="300px" height="150px" style="display:inline">
+       <h1 style="display:inline"> Karnataka Common Entrance Test </h1>
+       <img src="ele.jpg" float="right" width="300px" height="150px" style="display:inline">
+    </div>
+    <div class="content">
+      <h1 id="Math"> Mathematics section </h1>
+      <ol id="math_quest">
+        <li> 3+5+7+.... upto n terms is <br>
+          <input type="radio" name="1" value="1"> n(n+2)
+          <input type="radio" name="1" value="0"> n(n-2)
+          <input type="radio" name="1" value="0"> n<sup>2</sup>
+          <input type="radio" name="1" value="0"> 3n
+        </li>
+        <li> The total number of terms in the expansion of (a+x)<sup>47</sup>-(a-x)<sup>47</sup> after simplification is <br>
+          <input type="radio" name="2" value="1"> 24
+          <input type="radio" name="2" value="0"> 48
+          <input type="radio" name="2" value="0"> 47
+          <input type="radio" name="2" value="0"> 25
+        </li>
+        <li> The equation of the line passing through the point (1,2) and perpendicular to the line y=3x+1 is <br>
+          <input type="radio" name="3" value="1">x+3y-7=0
+          <input type="radio" name="3" value="0">3x+y-5=0
+          <input type="radio" name="3" value="0">x-3y=0
+          <input type="radio" name="3" value="0">2x=y
+        </li>
+        <li> The perpendicular distance of the point P(1,2,-3) from the XY plane is <br>
+          <input type="radio" name="4" value="0">1
+          <input type="radio" name="4" value="0">2
+          <input type="radio" name="4" value="1">3
+          <input type="radio" name="4" value="0">5
+        </li>
+        <li> The area of triangle a triangle with vertices (K,0) , (4,0) and (0,2) is 4 square units.Then the value of K is <br>
+          <input type="radio" name="5" value="0">2 or 10
+          <input type="radio" name="5" value="1">0 or 8
+          <input type="radio" name="5" value="0">4
+          <input type="radio" name="5" value="0">-8
+        </li>
+        <li> The area of the region bounded by the curve y=x<sup>2</sup> and y=2x is <br>
+          <input type="radio" name="6" value="0"> 8/3 sq units
+          <input type="radio" name="6" value="1"> 4/3 sq units
+          <input type="radio" name="6" value="0"> 4 sq units
+          <input type="radio" name="6" value="0">20/3 sq units
+        </li>
+        <li> The probability distribution of X is <br>
+          <table border="2px bold black" rules="all" >
+            <tr>
+              <td>X</td>
+              <td>0</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>P(x)</td>
+              <td>0.3</td>
+              <td>k  </td>
+              <td>2k </td>
+              <td>2k </td>
+            </tr>
+          </table>
+          The value of k is <br>
+          <input type="radio" name="7" value="0">0.28
+          <input type="radio" name="7" value="1">0.14
+          <input type="radio" name="7" value="0">0.2
+          <input type="radio" name="7" value="0">0.3
+        </li>
+        <li>f(x)=x<sup>3</sup>-12x-5 is strictly decreasing in the range <br>
+          <input type="radio" name="8" value="1">(-2,2)
+          <input type="radio" name="8" value="0">(-2,2]
+          <input type="radio" name="8" value="0">[-2,2)
+          <input type="radio" name="8" value="0">[-2,2]
+        </li>
+        <li> The rate of change of volume of a sphere with respect to its surface area when the radius is 4 cm, is <br>
+          <input type="radio" name="9" value="0">4 cm<sup>3</sup>/cm<sup>2</sup>
+          <input type="radio" name="9" value="1">2 cm<sup>3</sup>/cm<sup>2</sup>
+          <input type="radio" name="9" value="0">8 cm<sup>3</sup>/cm<sup>2</sup>
+          <input type="radio" name="9" value="0">1 cm<sup>3</sup>/cm<sup>2</sup>
+        </li>
+        <li> if f(x)=2x and g(x)=4x<sup>2</sup>, then (f <b>o</b> g)(x) is <br>
+          <input type="radio" name="10" value="0">4x<sup>3</sup>
+          <input type="radio" name="10" value="0">8x<sup>3</sup>
+          <input type="radio" name="10" value="1">8x<sup>2</sup>
+          <input type="radio" name="10" value="0">2x
+        </li>
+        <li>what is the value of 'c' in the Mean value theorem for f(x)=x<sup>2</sup> in [2,4] is<br>
+          <input type="radio" name="11" value="0">4
+          <input type="radio" name="11" value="0">2
+          <input type="radio" name="11" value="0">6
+          <input type="radio" name="11" value="1">3
+        </li>
+        <li>a matrix A is said to be symmetric matrix when </br>
+          <input type="radio" name="12" value="0"> A+A'=0
+          <input type="radio" name="12" value="0"> |A|=1
+          <input type="radio" name="12" value="1"> A=A'
+          <input type="radio" name="12" value="0"> A.A'=I
+        </li>
+        <li>the contrapositive of the statement <q>If a number is prime, Then then the number is odd </q><br>
+          <input type="radio" name="13" value="0">If a number is not prime,then it is not odd
+          <input type="radio" name="13" value="0">If a number is odd, then the number is prime<br>
+          <input type="radio" name="13" value="0">If a number is prime, then it is not odd
+          <input type="radio" name="13" value="1">If a number is even, then the number is composite
+        </li>
+        <li>The function f:<b>R</b>-><b>R</b> be defined by f(x)=x<sup>4</sup>, then <br>
+          <input type="radio" name="14" value="0"> f is one-one but not onto
+          <input type="radio" name="14" value="0"> f is not one-one but onto<br>
+          <input type="radio" name="14" value="1"> f is neither one-one nor onto
+          <input type="radio" name="14" value="0"> f is both one-one and onto
+        </li>
+        <li>The value of [-2.5] is <br>
+          <input type="radio" name="15" value="0">-2
+          <input type="radio" name="15" value="0">2
+          <input type="radio" name="15" value="0">3
+          <input type="radio" name="15" value="1">-3
+        </li>
+        <li>Which of the following operations on set of integers is <b> not </b> commutative <br>
+          <input type="radio" name="16" value="0">addition
+          <input type="radio" name="16" value="0">multiplication
+          <input type="radio" name="16" value="1">subtration
+          <input type="radio" name="16" value="0">All of them are commutative
+        </li>
+        <li>A curve is traced such that the sum of the distances from that point to two other given points
+            is a constant.The curve traced is <br>
+          <input type="radio" name="17" value="0">a straight line
+          <input type="radio" name="17" value="0">parabola
+          <input type="radio" name="17" value="0">hyperbola
+          <input type="radio" name="17" value="1">ellipse
+        </li>
+        <li>there are 100 products out of which 10 are defective. What is the probability that a set of five products contain atmost one defective product<br>
+          <input type="radio" name="18" value="0">(0.9)<sup>5</sup>
+          <input type="radio" name="18" value="0">10*(0.9)<sup>5</sup>
+          <input type="radio" name="18" value="0">5*(0.9)<sup>5</sup>
+          <input type="radio" name="18" value="1">(0.9)<sup>5</sup>+5*(0.1)*(0.9)<sup>4</sup>
+        </li>
+        <li>the equation of a straight line passing through the points (1,2) and (2,1) is<br>
+          <input type="radio" name="19" value="0">x-y=3
+          <input type="radio" name="19" value="1">x+y=3
+          <input type="radio" name="19" value="0">x*y=2
+          <input type="radio" name="19" value="0">y-x=3
+        </li>
+        <li>If A and B are two independent events then, P(A/B) is<br>
+          <input type="radio" name="20" value="1">P(A)
+          <input type="radio" name="20" value="0">P(B)
+          <input type="radio" name="20" value="0">P(A)+P(B)
+          <input type="radio" name="20" value="0">P(A)*P(B)
+        </li>
+      </ol>
+      <hr>
+      <br>
+      <h1 id="Phy"> Physics Section </h1>
+      <ol id="Phy_quest">
+        <li>A substance of mass 49.52 g occupies 1.5 cm<sup>3</sup> of volume.The density of the substance to correct significant numbers is <br>
+          <input type="radio" name="21" value="1">3.3
+          <input type="radio" name="21" value="0">3.30
+          <input type="radio" name="21" value="0">3.300
+          <input type="radio" name="21" value="0">3.302
+        </li>
+        <li>A car moving at the rate of 20 m/s is stopped in a distance of 40m.At what distance will the car be stopped if it were moving at double the velocity with same retardation<br>
+          <input type="radio" name="22" value="0">80 m
+          <input type="radio" name="22" value="1">160 m
+          <input type="radio" name="22" value="0">320 m
+          <input type="radio" name="22" value="0">640 m
+        </li>
+        <li>The angle between velocity and acceleration of a particle in uniform circular motion is <br>
+          <input type="radio" name="23" value="0">30<sup>o</sup>
+          <input type="radio" name="23" value="0">45<sup>o</sup>
+          <input type="radio" name="23" value="1">90<sup>o</sup>
+          <input type="radio" name="23" value="0">180<sup>o</sup>
+        </li>
+        <li>A body of mass 50 KG is suspended using a spring balance inside a lift at rest.If the lift starts falling freely,
+            the reading of the spring balance is <br>
+          <input type="radio" name="24" value="0">= 50 KG
+          <input type="radio" name="24" value="0">> 50 KG
+          <input type="radio" name="24" value="0">0 KG
+          <input type="radio" name="24" value="1"> < 50 KG
+        </li>
+        <li>Two spheres of electric charges -2nC and 8nC are kept at a distance 'd' apart.If they were allowed to touch each other, What is the new
+            distance between them to get a repulsive force of the same magnitude as before<br>
+          <input type="radio" name="25" value="1">3d/4
+          <input type="radio" name="25" value="0">4d/3
+          <input type="radio" name="25" value="0">d/2
+          <input type="radio" name="25" value="0">2d
+        </li>
+        <li>The minimum value of capacitance that can be obtained by combining three capacitors of capacitances 1pF,2pF and 4pF is<br>
+          <input type="radio" name="26" value="0">7/4 pF
+          <input type="radio" name="26" value="1">4/7 pF
+          <input type="radio" name="26" value="0">7 pF
+          <input type="radio" name="26" value="0">1/7 pF
+        </li>
+        <li>A piece of copper is to be shaped into a conducting wire of maximum resistance. The suitable lenght and diameter are _______ and _______ ,
+            respectively<br>
+          <input type="radio" name="27" value="0">L and d
+          <input type="radio" name="27" value="0">2L and d
+          <input type="radio" name="27" value="1">2L and d/2
+          <input type="radio" name="27" value="0">L and d/2
+        </li>
+        <li>A bar magnet is allowed to fall vertically through a copper coil placed in a horizontal plane. The magnet falls with a net acceleration<br>
+          <input type="radio" name="28" value="0">=g m/s<sup>2</sup>
+          <input type="radio" name="28" value="0"> =0 m/s<sup>2</sup>
+          <input type="radio" name="28" value="0"> >g m/s<sup>2</sup>
+          <input type="radio" name="28" value="1"> < g m/s<sup>2</sup>
+        </li>
+        <li>According to Cartesian sign convention, in ray optics <br>
+          <input type="radio" name="29" value="1"> all distances in the direction of incident ray are taken as positive
+          <input type="radio" name="29" value="0"> all distances are positive <br>
+          <input type="radio" name="29" value="0"> all distances are negative
+          <input type="radio" name="29" value="0"> I can take it however i want
+        </li>
+        <li>Which of the following gates are considered as universal gates <br>
+          <input type="radio" name="30" value="0"> AND gate
+          <input type="radio" name="30" value="1"> NAND gate
+          <input type="radio" name="30" value="0"> OR gate
+          <input type="radio" name="30" value="0"> NOT gate
+        </li>
+        <li>A basic communication system consists of <br>
+          (a) Transmitter<br>
+          (b) Information source<br>
+          (c) User of Information <br>
+          (d) Channel <br>
+          (e) Receiver <br>
+          <input type="radio" name="31" value="0">a, b, c, d and e
+          <input type="radio" name="31" value="0">b, e, d, a and c
+          <input type="radio" name="31" value="1">b, a, d, e and c
+          <input type="radio" name="31" value="0">b, e, a, d and c
+        </li>
+        <li>A car travelled from A to B with a velocity of 20 m/s and back to A with a velocity of 30 m/s.What is the total velocity and speed at which
+            the car travelled,respectively <br>
+          <input type="radio" name="32" value="0"> 0 m/s and 25 m/s
+          <input type="radio" name="32" value="0"> 25 m/s and 0 m/s
+          <input type="radio" name="32" value="0"> 25 m/s and 25 m/s
+          <input type="radio" name="32" value="1"> 0 m/s and 24 m/s
+        </li>
+        <li> Two particles A and B are projected at an angle of 60<sup>o</sup> and 30<sup>o</sup> with the same initial speed respectively.The relationship
+          between the range of the two projectile motions are <br>
+          <input type="radio" name="33" value="1"> A=B
+          <input type="radio" name="33" value="0"> A>B
+          <input type="radio" name="33" value="0"> A< B
+          <input type="radio" name="33" value="0"> any of the above is possible
+        </li>
+        <li>The value of acceleration due to gravity is maximum at <br>
+          <input type="radio" name="34" value="0"> half the depth of earth
+          <input type="radio" name="34" value="1"> on the surface of earth <br>
+          <input type="radio" name="34" value="0"> at half the depth of the earth above the surface of earth
+          <input type="radio" name="34" value="0"> uniform everywhere
+        </li>
+        <li> if <b>A</b>=2i<sup>^</sup>+3j<sup>^</sup> and <b>B</b>=xi<sup>^</sup>-3k<sup>^</sup> are orthogonal to each other, then the value of
+             x is <br>
+          <input type="radio" name="35" value="0"> 9/2
+          <input type="radio" name="35" value="0"> 2/9
+          <input type="radio" name="35" value="1"> 0
+          <input type="radio" name="35" value="0"> -9/2
+        </li>
+        <li> A system with 2 capacitors of capacitances 2 micro farad and 4 micro farad are connected in series across a potential difference of
+             6V. The electric charge stored and the energy stored in the system are(both in micro farad)<br>
+          <input type="radio" name="36" value="0"> 6 and 24
+          <input type="radio" name="36" value="0"> 36 and 24
+          <input type="radio" name="36" value="0"> 8 and 18
+          <input type="radio" name="36" value="1"> 8 and 24
+        </li>
+        <li> In a capacitor the energy is stored in the form of <br>
+          <input type="radio" name="37" value="1">Electric field lines
+          <input type="radio" name="37" value="0">Magnetic field lines
+          <input type="radio" name="37" value="0">Both of the above
+          <input type="radio" name="37" value="0">Depends on the setup
+        </li>
+        <li> The value of acceleration due to gravity at a depth of 1600 km from the surface of the earth is (the radius of earth is 6400km)<br>
+          <input type="radio" name="38" value="0">9.8 m/s<sup>2</sup>
+          <input type="radio" name="38" value="1">7.35 m/s<sup>2</sup>
+          <input type="radio" name="38" value="0">4.9 m/s<sup>2</sup>
+          <input type="radio" name="38" value="0">2.45 m/s<sup>2</sup>
+        </li>
+        <li>A galvanometer of resistance 50 ohm is connected to a battery of 3V along with a resistance of 2950 ohm in series shows full-scale
+            deflection of 30 divisions. The additional series resistance required to reduce deflection to 20 divisions is (in ohm)<br>
+          <input type="radio" name="39" value="0"> 4500
+          <input type="radio" name="39" value="0"> 2950
+          <input type="radio" name="39" value="1"> 1500
+          <input type="radio" name="39" value="0"> 7400
+        </li>
+        <li>In a system of two crossed polarisers, it is found that the intensity of the light from the second polariser is half of that from
+            the first polariser.The angle between their pass axes is </br>
+          <input type="radio" name="40" value="0"> 0<sup>o</sup>
+          <input type="radio" name="40" value="0"> 30<sup>o</sup>
+          <input type="radio" name="40" value="0"> 60<sup>o</sup>
+          <input type="radio" name="40" value="1"> 45<sup>o</sup>
+        </li>
+      </ol>
+      <h1 id="Chem">Chemistry Section </h1>
+      <ol id="Chem_quest">
+        <li>The magnetic nature of elements depends on the presence of unpaired electrons.Identify the configuration of the transition elements
+            which shows highest magnetic moment <br>
+          <input type="radio" name="41" value="1"> 3d<sup>5</sup>
+          <input type="radio" name="41" value="0"> 3d<sup>2</sup>
+          <input type="radio" name="41" value="0"> 3d<sup>7</sup>
+          <input type="radio" name="41" value="0"> 3d<sup>8</sup>
+        </li>
+        <li>The correct set of qauntum numbers for the unpaired electrons of clorine atom is <br>
+          <input type="radio" name="42" value="0">2,1,1,+1/2
+          <input type="radio" name="42" value="1">3,1,1,+1/2 or -1/2
+          <input type="radio" name="42" value="0">3,0,0,+1/2 or -1/2
+          <input type="radio" name="42" value="0">2,0,0,-1/2
+        </li>
+        <li>The equilibrium constant for the reaction <br>
+            A<sub>(g)</sub>+B<sub>(g)</sub> < = > C<sub>(g)</sub> is 4X10<sup>-4</sup> 2000K.In presence of catalyst, the equilibrium is attained
+            ten times faster.Therefore the equilibrium constant in the presence of catalyst at 2000K is <br>
+          <input type="radio" name="43" value="0">4X10<sup>-3</sup>
+          <input type="radio" name="43" value="0">4X10<sup>-2</sup>
+          <input type="radio" name="43" value="1">4X10<sup>-4</sup>
+          <input type="radio" name="43" value="0">4X10<sup>-5</sup>
+        </li>
+        <li>In a face centered cubic arrangement of A and B atoms in which 'A' atoms are at the corner of unit cell and 'B' atoms are at
+            the face centers.One of 'A' atoms is missing from one corner in unit cell.The simplest formula of the compound is <br>
+          <input type="radio" name="44" value="0">AB<sub>3</sub>
+          <input type="radio" name="44" value="0">A<sub>3</sub>B
+          <input type="radio" name="44" value="0">A<sub>7</sub>B<sub>3</sub>
+          <input type="radio" name="44" value="1">A<sub>7</sub>B<sub>24</sub>
+        </li>
+        <li>The vant Hoff's factor i accounts for
+          <input type="radio" name="45" value="1">extent of dissociation of solute
+          <input type="radio" name="45" value="0">extent of mobility of solute
+          <input type="radio" name="45" value="0">extent of solubility of solute
+          <input type="radio" name="45" value="0">extent of dissolution of solute
+        </li>
+        <li>For a reaction (1/2)A----->2B, rate of disapearance of A is related to rate of appearance of B by the expression<br>
+          <input type="radio" name="46" value="0">-d[A]/dt=4d[B]/dt
+          <input type="radio" name="46" value="1">-d[A]/dt=(1/4)d[B]/dt
+          <input type="radio" name="46" value="0">-d[A]/dt=2d[B]/dt
+          <input type="radio" name="46" value="0">-d[A]/dt=(1/2)d[B]/dt
+        </li>
+        <li>Which of the following aqueous solution has highest freezing point <br>
+          <input type="radio" name="47" value="0">0.1 molal Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>
+          <input type="radio" name="47" value="0">0.1 molal AlCl<sub>3</sub>
+          <input type="radio" name="47" value="1">0.1 molal NH<sub>4</sub>Cl
+          <input type="radio" name="47" value="0">0.1 molal BaCl<sub>2</sub>
+        </li>
+        <li>As we go across the elements in the periodic table in the same row, the size of the atom in general<br>
+          <input type="radio" name="48" value="0">Increases
+          <input type="radio" name="48" value="0">remains same
+          <input type="radio" name="48" value="0">can't say
+          <input type="radio" name="48" value="1">Decreases
+        </li>
+        <li>As we go down the group in the periodic table, the metallic nature of the elements in general<br>
+          <input type="radio" name="49" value="1">Increases
+          <input type="radio" name="49" value="0">Decreases
+          <input type="radio" name="49" value="0">Depends on the group
+          <input type="radio" name="49" value="0">remains same
+        </li>
+        <li>The concentration of a reactant A in a reaction is noted against the time, it was allowed to react.The following are the observations
+            made<br>
+            <table rules="all" border="2px bold black">
+              <tr>
+                <td>[A]</td>
+                <td>4 M </td>
+                <td>2 M </td>
+                <td>1 M </td>
+              </tr>
+              <tr>
+                <td>time after reaction started</td>
+                <td>0 sec </td>
+                <td>50 sec </td>
+                <td>100 sec </td>
+              </tr>
+            </table>
+            <br>
+            The order of the reaction is <br>
+          <input type="radio" name="50" value="0"> second
+          <input type="radio" name="50" value="1"> first
+          <input type="radio" name="50" value="0"> 0 order
+          <input type="radio" name="50" value="0"> can't predict with the given data
+        </li>
+        <li>The unit of the rate constant of zero order reaction is <br>
+          <input type="radio" name="51" value="0"> mol L s<sup>-1</sup>
+          <input type="radio" name="51" value="0"> mol<sup>-1</sup> L s
+          <input type="radio" name="51" value="1"> s<sup>-1</sup>
+          <input type="radio" name="51" value="0"> s
+        </li>
+        <li>Which defect in the crystal of NaCl causes it to turn yellow in colour <br>
+          <input type="radio" name="52" value="0">Frenkel defect
+          <input type="radio" name="52" value="0">defect does not cause change in colour
+          <input type="radio" name="52" value="0">frenkel or schottky
+          <input type="radio" name="52" value="1">schottky defect
+        </li>
+        <li>The number of atoms in bcc type crystal and fcc type crystal are respectively<br>
+          <input type="radio" name="53" value="1">2,4
+          <input type="radio" name="53" value="0">1,4
+          <input type="radio" name="53" value="0">1,2
+          <input type="radio" name="53" value="0">4,2
+        </li>
+        <li>When cut with a sharp edged tool, crystalline solids split into two pieces and the newly generated surfaces are plain and smooth.
+            This property is known as
+          <input type="radio" name="54" value="0">isotropy
+          <input type="radio" name="54" value="1">cleavage property
+          <input type="radio" name="54" value="0">anisotropy
+          <input type="radio" name="54" value="0">none of the above
+        </li>
+        <li><q> The amount of chemical reaction which occurs at any electrode during electrolysis by a current is proportional to the quantity
+                of electricity passed through the electrolyte </q><br>
+                which of the law state the above statement<br>
+          <input type="radio" name="55" value="0">kohlrausch law
+          <input type="radio" name="55" value="0">Faraday's second law of electrolysis
+          <input type="radio" name="55" value="1">Faraday's first law of electrolysis
+          <input type="radio" name="55" value="0">none of the above
+        </li>
+        <li>Calculate the charge used by a lamp in 60 seconds if it draws a current of 1.5A <br>
+          <input type="radio" name="56" value="0">60 C
+          <input type="radio" name="56" value="0">40 C
+          <input type="radio" name="56" value="0">100 C
+          <input type="radio" name="56" value="1">90 C
+        </li>
+        <li>The common oxidation states of group 15 elements are <br>
+          <input type="radio" name="57" value="1"> -3,+3 and +5
+          <input type="radio" name="57" value="0"> -5 and -3
+          <input type="radio" name="57" value="0"> -3 and -5
+          <input type="radio" name="57" value="0"> +3 and +5
+        </li>
+        <li>Carbon-oxygen double bond is called <br>
+          <input type="radio" name="58" value="0">phenol group
+          <input type="radio" name="58" value="1">carbonyl group
+          <input type="radio" name="58" value="0">alcohol group
+          <input type="radio" name="58" value="0">none of the above
+        </li>
+        <li>What is the common name of dimethyl ketone?<br>
+          <input type="radio" name="59" value="0">benzene
+          <input type="radio" name="59" value="0">Ether
+          <input type="radio" name="59" value="1">acetone
+          <input type="radio" name="59" value="0">phenone
+        </li>
+        <li><q> Carbohydrate that cannot be hydrolysed further togive simpler unit of polyhydroxy aldehyde or ketone.</q>
+            Name the type of carbohydrates.<br>
+          <input type="radio" name="60" value="0">Polysaccharide
+          <input type="radio" name="60" value="0">Oligosaccharide
+          <input type="radio" name="60" value="0">none of these
+          <input type="radio" name="60" value="1">Monosaccharide
+        </li>
+      </ol>
+    </div>
+    <script>
+      var TEST={};
+      TEST.create_question=function(){
+        var list=document.querySelectorAll("#math_quest li");
+        for(i=0;i<list.length;i++){
+          var b=parseInt(Math.random()*list.length);
+          document.querySelector("#math_quest").appendChild(list[b]);
+        }
+        var list_phy=document.querySelectorAll("#Phy_quest li");
+        for(i=0;i<list_phy.length;i++){
+          var c=parseInt(Math.random()*list_phy.length);
+          document.querySelector("#Phy_quest").appendChild(list_phy[c]);
+        }
+        var list_chem=document.querySelectorAll("#Chem_quest li");
+        for(i=0;i<list_chem.length;i++){
+          var d=parseInt(Math.random()*list_chem.length);
+          document.querySelector("#Chem_quest").appendChild(list_chem[d]);
+
+        }
+      }
+      TEST.create_question();
+      TEST.marks=function(){
+        var v=confirm("Do you want to exit test");
+        if(v==false){
+          return;
+        }
+        final();
+      }
+      final=function(){
+           var m=0;
+           var list=document.querySelectorAll("input");
+           for(i=0;i<list.length;i++){
+             if(list[i].checked){
+               if(list[i].getAttribute("value")==1){
+                 m+=1;
+               }
+             }
+           }
+           change=document.body.querySelectorAll("div");
+           change[3].innerHTML ="Your marks is "+m;
+           var form=document.querySelector("form");
+           var ele =document.createElement("input");
+           ele.setAttribute("type","text");
+           ele.value=m;
+           ele.setAttribute("name","marks");
+           form.insertBefore(ele,form.children[0]);
+           return true;
+
+      }
+
+          var ch=setInterval(change,1000);
+          function change(){
+            var sec=document.querySelector("#sec");
+            if(sec.innerHTML==0){
+              var min=document.querySelector("#min");
+              if(min.innerHTML==0){
+                var form=document.querySelector("form");
+                final();
+                form.submit();
+                clearInterval(ch);
+                return;
+              }
+              min.innerHTML=min.innerHTML-1;
+              sec.innerHTML=59;
+            }
+            else{
+              sec.innerHTML=sec.innerHTML-1;
+            }
+          }
+
+    </script>
+  </body>
+</html>

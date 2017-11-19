@@ -1,0 +1,21 @@
+Pes University,Computer Science,2
+Pes University,Mechanical Engineering,2
+Pes University,Electrical Engineering,1
+Pes University,Civil Engineering,1
+Pes University,Information Science,1
+
+RV college of Engineering,Computer Science,2
+RV college of Engineering,Electrical Engineering,2
+RV college of Engineering,Civil Engineering,1
+RV college of Engineering,Information Science,1
+
+MS Ramaiah Institute of Technology,Computer Science,2
+MS Ramaiah Institute of Technology,Civil Engineering,2
+MS Ramaiah Institute of Technology,Mechanical Engineering,1
+MS Ramaiah Institute of Technology,Electrical Engineering,1
+
+Siddaganga Institute of Technology,Computer Science,2
+Siddaganga Institute of Technology,Mechanical Engineering,1
+Siddaganga Institute of Technology,Electrical Engineering,2
+Siddaganga Institute of Technology,Information Science,1
+

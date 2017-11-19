@@ -1,0 +1,52 @@
+/* i need to make this responsive*/
+.index{
+  background-color: pink;
+  position:fixed;
+  margin-top:150px;/* bring the index without dragging the pink color */
+  padding-left:0%;
+/*  padding-top:200px;*/
+}
+img{
+  display: inline;
+}
+.heading{
+  background-color: yellow;
+position: fixed;
+top:0px;
+margin-top:0px;
+padding-left: 115px;
+padding-right: 120px;
+/*  padding-right: ;*/
+}
+
+.register input[type="submit"]{
+  color:Red;
+  background-color: yellow;
+  width: 200;
+  font-size: 20;
+}
+.content input[type="submit"]{
+  color:BLUE;
+  background-color:lightGreen;
+  width: 200;
+  font-size: 20;
+}
+body{
+  background-color:#e8f3f8;
+}
+.register{
+
+  background-color: white;
+  position: fixed;
+  margin-left: 80%;
+  margin-top: 150px;
+}
+.content{
+  padding-left:200px;
+  padding-top:175px;
+  width: 800px;
+}
+h1{
+  background-color: #C39BD3;
+  color: Red;
+}

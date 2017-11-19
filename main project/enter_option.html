@@ -1,0 +1,301 @@
+<html>
+<head> <title> enter option </title>
+</head>
+<body>
+  <link href="main.css" rel="stylesheet" type="text/css" >
+  <div class="Register">
+    <input type="submit" value="Confirm" onclick="option.add()">
+  </div>
+  <div class="heading">
+    <img src="KCET.jpg" float="left" width="300px" height="150px" style="display:inline">
+    <h1 style="display:inline"> Karnataka Common Entrance Test </h1>
+    <img src="ele.jpg" float="right" width="300px" height="150px" style="display:inline">
+   </div>
+  <div class="content">
+    <form action="choice.php" onsubmit="return finalize()">
+    <table>
+      <thead>
+        <td>College name</td>
+        <td>Branch </td>
+      </thead>
+      <tr>
+        <td class="clg">
+          <select onChange="BRANCH.op()" id="clg_name">
+            <option>--------------</option>
+            <option> Pes University </option>
+            <option> RV college of Engineering </option>
+            <option> MS Ramaiah Institute of Technology </option>
+            <option> Siddaganga Institute of Technology </option>
+          </select>
+        </td>
+        <td>
+          <select id="option">
+            <option>--------------</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <input type="submit" value="Submit" id="last">
+  </form>
+  </div>
+
+    <script>
+      var PRIORIY={}
+      PRIORIY.show=function(event){
+        event.preventDefault();
+        for(i=0;i<this.parentNode.children.length;i++){
+          this.parentNode.children[i].style.backgroundColor="#e8f3f8";
+        }
+        this.style.backgroundColor="#42f420";
+        var li=document.querySelectorAll("#change");
+        if(li.length==1){
+          li[0].parentNode.removeChild(li[0]);
+        }
+        var tab=document.createElement("table");
+        tab.style.backgroundColor="#ff0001";
+        tab.setAttribute("rules","all");
+        tab.setAttribute("border","1px solid black");
+        tab.setAttribute("id","change");
+        var op1=document.createElement("tr");
+        var op11=document.createElement("td");
+        op11.innerHTML="move up";
+        i=this.children[0].innerHTML;
+        op11.addEventListener("click",function(){option.moveup(i);},false);//we need to pass the current priority as arg
+        var op2=document.createElement("tr");
+        var op21=document.createElement("td");
+        op21.innerHTML="move down";
+        op21.addEventListener("click",function(){option.movedown(i);},false);
+        var op3=document.createElement("tr");
+        var op31=document.createElement("td");
+        op31.innerHTML="give a priority";
+        op31.addEventListener("click",function(){option.change(i);},false);
+        var op4=document.createElement("tr");
+        var op41=document.createElement("td");
+        op41.innerHTML="delete choice";
+        op41.addEventListener("click",function(){option.delete(i);},false);
+        op1.appendChild(op11);
+        op2.appendChild(op21);
+        op3.appendChild(op31);
+        op4.appendChild(op41);
+        tab.appendChild(op1);
+        tab.appendChild(op2);
+        tab.appendChild(op3);
+        tab.appendChild(op4);
+        tab.style.left=event.pageX+"px";
+        tab.style.top=event.pageY+"px";
+        tab.style.position="fixed";
+
+        document.body.appendChild(tab);
+      }
+      var BRANCH={}
+      BRANCH.cre=function(type,value){
+        var nw=document.createElement(type);
+        nw.innerHTML=value;
+        return(nw);
+      }
+      BRANCH.add=function(list){
+        if(list[0]){
+          var first=BRANCH.cre("option","Computer Science");
+          document.querySelector("#option").appendChild(first);
+        }
+        if(list[1]){
+          var second=BRANCH.cre("option","Mechanical Engineering");
+          document.querySelector("#option").appendChild(second);
+        }
+        if(list[2]){
+          var third=BRANCH.cre("option","Electrical Engineering");
+          document.querySelector("#option").appendChild(third);
+        }
+        if(list[3]){
+          var four=BRANCH.cre("option","Civil Engineering");
+          document.querySelector("#option").appendChild(four);
+        }
+        if(list[4]){
+          var five=BRANCH.cre("option","Information Science");
+          document.querySelector("#option").appendChild(five);
+        }
+      }
+      BRANCH.op=function(){
+        var list=document.getElementById("clg_name");
+        var list_chd=document.getElementById("option");
+        for(i=1;i<list_chd.children.length;i++){
+          list_chd.removeChild(list_chd.children[i]);
+          i-=1;
+        }
+        switch(list.selectedIndex){
+          case 1:brh_list=[true,true,true,true,true];
+                 BRANCH.add(brh_list);
+                 break;
+          case 2:brh_list=[true,false,true,true,true];
+                 BRANCH.add(brh_list);
+                 break;
+          case 3:brh_list=[true,true,true,true,false];
+                 BRANCH.add(brh_list);
+                 break;
+          case 4:brh_list=[true,true,true,false,true];
+                 BRANCH.add(brh_list);
+                 break;
+
+        }
+
+
+      }
+      var option={}
+      option.count=0;
+      option.moveup=function(i){
+        var tab=document.querySelector("#change");
+        tab.parentNode.removeChild(tab);
+        var opt=document.querySelector("#entered");
+        if(i>1){
+          opt.insertBefore(opt.children[i],opt.children[i-1]);
+          for(j=i-1;j<opt.children.length;j++){
+            opt.children[j].children[0].innerHTML=j;
+          }
+        }
+      }
+      option.movedown=function(i){
+        var tab=document.querySelector("#change");
+        tab.parentNode.removeChild(tab);
+        var opt=document.querySelector("#entered");
+        if(i<opt.children.length-1){
+
+          j=i;
+          ++i;
+          opt.insertBefore(opt.children[i],opt.children[j]);
+          for(;j<opt.children.length;j++){
+            opt.children[j].children[0].innerHTML=j;
+          }
+        }
+      }
+      option.change=function(i){
+        var tab=document.querySelector("#change");
+        tab.parentNode.removeChild(tab);
+        var opt=document.querySelector("#entered");
+        var j=prompt("Enter the priority you want to give to this choice");
+        if(j<opt.children.length){
+          if(j>i){
+            j++;//because j+1 will concatenate
+            opt.insertBefore(opt.children[i],opt.children[j]);
+            for(c=i;c<opt.children.length;c++){
+              opt.children[c].children[0].innerHTML=c;
+            }
+          }
+          else if(j<i){
+            opt.insertBefore(opt.children[i],opt.children[j]);
+            for(c=j;c<opt.children.length;c++){
+              opt.children[c].children[0].innerHTML=c;
+            }
+          }
+        }
+        else{
+          if(confirm("The entered priority is more than the number of choices you have given.Do you want it to be appended")){
+          opt.appendChild(opt.children[i]);
+          for(c=i;c<opt.children.length;c++){
+            opt.children[c].children[0].innerHTML=c;
+          }
+        }
+        }
+      }
+      option.delete=function(i){
+        var tab=document.querySelector("#change");
+        tab.parentNode.removeChild(tab);
+        var opt=document.querySelector("#entered");
+        for(j=i;j<opt.children.length;j++){
+
+            opt.children[j].children[0].innerHTML=j-1;
+          }
+        opt.removeChild(opt.children[i]);
+      }
+      option.table=function(){
+              var i=document.createElement("table");
+              i.setAttribute("cellpadding","5");
+
+              i.setAttribute("id","entered");
+              i.setAttribute("border","1 solid black");
+              i.setAttribute("rules","all");
+              var m=document.createElement("thead");
+              var s=document.createElement("td");
+              var n=document.createElement("td");
+              var o=document.createElement("td");
+              s.setAttribute("style","color:blue");
+              n.setAttribute("style","color:blue");
+              o.setAttribute("style","color:blue");
+              s.setAttribute("align","center");
+              n.setAttribute("align","center");
+              o.setAttribute("align","center");
+              s.innerHTML="PRIORIY";
+              n.innerHTML="COLLEGE";
+              o.innerHTML="BRANCH";
+              m.appendChild(s);
+              m.appendChild(n);
+              m.appendChild(o);
+              i.appendChild(m);
+
+              var list=document.querySelector("form");
+              list.appendChild(i);
+              return(i);
+            }
+      option.add=function(){
+        var clg=document.getElementById("clg_name");
+        var option=document.getElementById("option");
+
+       var list=document.getElementById("entered");
+       if(list==null){
+         list=this.table();
+       }
+       if(clg.value=="--------------"){
+         alert("College field is left blank");
+         return;
+       }
+       if(option.value=="--------------"){
+         alert("branch field is left blank");
+         return;
+       }
+
+
+       for(i=1;i<list.children.length;i++){
+         if((list.children[i].children[1].innerHTML==clg.value)&&(list.children[i].children[2].innerHTML==option.value)){
+           alert("This option is already entered as priority "+i+". Please use right click to alter the choice priority");
+           return;
+         }
+       }
+       var v=document.createElement("tr");
+
+       var op_no=document.createElement("td");
+       var clg_name=document.createElement("td");
+       var brh=document.createElement("td");
+        op_no.innerHTML=list.children.length;
+        clg_name.innerHTML=clg.value;
+        brh.innerHTML=option.value;
+        op_no.setAttribute("align","center");
+
+        v.appendChild(op_no);
+        v.appendChild(clg_name);
+        v.appendChild(brh);
+        v.addEventListener("contextmenu",PRIORIY.show,false);
+
+        list.appendChild(v);
+
+      }
+      finalize=function(){
+        if(confirm("Do you really want to submit.\nPlease note that you cannot change it later on")){
+        var form=document.querySelector("form");
+        var tab=document.querySelector("#entered");
+        var ele=document.createElement("textarea");
+        ele.setAttribute("name","choices");
+        for(i=1;i<tab.children.length;i++){
+          ele.value+=tab.children[i].children[1].innerHTML;
+          ele.value+=",";
+          ele.value+=tab.children[i].children[2].innerHTML;
+          ele.value+=";";
+        }
+        var sib=document.querySelector("#last");
+        form.insertBefore(ele,sib);
+
+        return true;
+      }
+      return false;
+      }
+    </script>
+</body>
+</html>
