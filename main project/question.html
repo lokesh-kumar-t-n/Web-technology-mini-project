@@ -26,7 +26,7 @@
     <div class="content">
       <h1 id="Math"> Mathematics section </h1>
       <ol id="math_quest">
-        <li> 3+5+7+.... upto n terms is <br>
+        <li> 1+3+5+7+.... upto n terms is <br>
           <input type="radio" name="1" value="1"> n(n+2)
           <input type="radio" name="1" value="0"> n(n-2)
           <input type="radio" name="1" value="0"> n<sup>2</sup>
@@ -491,8 +491,7 @@
                }
              }
            }
-           change=document.body.querySelectorAll("div");
-           change[3].innerHTML ="Your marks is "+m;
+           alert("Congrats!! your marks is "+m);
            var form=document.querySelector("form");
            var ele =document.createElement("input");
            ele.setAttribute("type","text");
